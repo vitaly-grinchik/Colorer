@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D853B6722A447D4C005B7156 /* ValueFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853B6712A447D4C005B7156 /* ValueFieldView.swift */; };
 		D86C7D1A2A44756300A9EB1D /* ColorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D192A44756300A9EB1D /* ColorerApp.swift */; };
-		D86C7D1C2A44756300A9EB1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D1B2A44756300A9EB1D /* ContentView.swift */; };
+		D86C7D1C2A44756300A9EB1D /* ColorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D1B2A44756300A9EB1D /* ColorerView.swift */; };
 		D86C7D1E2A44757000A9EB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D1D2A44757000A9EB1D /* Assets.xcassets */; };
 		D86C7D212A44757100A9EB1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */; };
 		D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D853B6712A447D4C005B7156 /* ValueFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueFieldView.swift; sourceTree = "<group>"; };
 		D86C7D162A44756300A9EB1D /* Colorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86C7D192A44756300A9EB1D /* ColorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorerApp.swift; sourceTree = "<group>"; };
-		D86C7D1B2A44756300A9EB1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D86C7D1B2A44756300A9EB1D /* ColorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorerView.swift; sourceTree = "<group>"; };
 		D86C7D1D2A44757000A9EB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBoxView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D853B6732A447D9E005B7156 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D86C7D1B2A44756300A9EB1D /* ColorerView.swift */,
+				D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */,
+				D853B6712A447D4C005B7156 /* ValueFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D853B6742A447DAB005B7156 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D86C7D192A44756300A9EB1D /* ColorerApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		D86C7D0D2A44756300A9EB1D = {
 			isa = PBXGroup;
 			children = (
@@ -53,9 +73,8 @@
 		D86C7D182A44756300A9EB1D /* Colorer */ = {
 			isa = PBXGroup;
 			children = (
-				D86C7D192A44756300A9EB1D /* ColorerApp.swift */,
-				D86C7D1B2A44756300A9EB1D /* ContentView.swift */,
-				D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */,
+				D853B6742A447DAB005B7156 /* App */,
+				D853B6732A447D9E005B7156 /* Views */,
 				D86C7D1D2A44757000A9EB1D /* Assets.xcassets */,
 				D86C7D1F2A44757100A9EB1D /* Preview Content */,
 			);
@@ -141,8 +160,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */,
-				D86C7D1C2A44756300A9EB1D /* ContentView.swift in Sources */,
+				D86C7D1C2A44756300A9EB1D /* ColorerView.swift in Sources */,
 				D86C7D1A2A44756300A9EB1D /* ColorerApp.swift in Sources */,
+				D853B6722A447D4C005B7156 /* ValueFieldView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
