@@ -11,6 +11,7 @@
 		D86C7D1C2A44756300A9EB1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D1B2A44756300A9EB1D /* ContentView.swift */; };
 		D86C7D1E2A44757000A9EB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D1D2A44757000A9EB1D /* Assets.xcassets */; };
 		D86C7D212A44757100A9EB1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */; };
+		D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		D86C7D1B2A44756300A9EB1D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D86C7D1D2A44757000A9EB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				D86C7D192A44756300A9EB1D /* ColorerApp.swift */,
 				D86C7D1B2A44756300A9EB1D /* ContentView.swift */,
+				D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */,
 				D86C7D1D2A44757000A9EB1D /* Assets.xcassets */,
 				D86C7D1F2A44757100A9EB1D /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */,
 				D86C7D1C2A44756300A9EB1D /* ContentView.swift in Sources */,
 				D86C7D1A2A44756300A9EB1D /* ColorerApp.swift in Sources */,
 			);
