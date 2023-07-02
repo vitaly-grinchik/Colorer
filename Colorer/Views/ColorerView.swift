@@ -14,8 +14,8 @@ struct ColorerView: View {
         case greenValueField
         case blueValueField
     }
-    
-    @State private var color = Color(.gray).opacity(0.5)
+
+    @State private var color = Color(red: 0.5, green: 0.5, blue: 0.5)
     
     @State private var redValue: Double = 125
     @State private var greenValue: Double = 125
@@ -40,6 +40,7 @@ struct ColorerView: View {
                     TextFieldView(value: $redValue,
                                        action: setColor
                     )
+                    .focused($focusedField, equals: .redValueField)
                 }
 
                 // GREEN UI group
@@ -52,6 +53,7 @@ struct ColorerView: View {
                     TextFieldView(value: $greenValue,
                                        action: setColor
                     )
+                    .focused($focusedField, equals: .greenValueField)
                 }
                 
                 // BLUE UI group
@@ -64,6 +66,7 @@ struct ColorerView: View {
                     TextFieldView(value: $blueValue,
                                        action: setColor
                     )
+                    .focused($focusedField, equals: .blueValueField)
                 }
                 
                 Spacer()
@@ -73,26 +76,41 @@ struct ColorerView: View {
             }
         }
         .padding()
-//        .toolbar {
-//            ToolbarItemGroup(placement: .keyboard) {
-//                Spacer()
-//                Button("Done", action: dismissKeyBoard )
-//            }
-//        }
-        
+        .toolbar {
+            ToolbarItemGroup(placement: .keyboard) {
+                Button(action: jumpUp) {
+                    Image(systemName: "chevron.up")
+                }
+                Button(action: jumpDown) {
+                    Image(systemName: "chevron.down")
+                }
+                Spacer()
+                Button("Done") { focusedField = .none}
+            }
+        }
         
     }
-        
-    private func validate(_ value: Double) {
-        
+
+    private func setValue() {
+        focusedField = .none
     }
     
-    private func dismissKeyBoard() {
-//        focusedRedValueTextField = false
-//        focusedGreenValueTextField = false
-//        focusedBlueValueTextField = false
+    private func jumpUp() {
+        switch focusedField {
+        case .blueValueField: focusedField = .greenValueField
+        case .greenValueField: focusedField = .redValueField
+        default: focusedField = .blueValueField
+        }
     }
     
+    private func jumpDown() {
+        switch focusedField {
+        case .blueValueField: focusedField = .redValueField
+        case .greenValueField: focusedField = .blueValueField
+        default: focusedField = .greenValueField
+        }
+    }
+        
     private func resetUI() {
         redValue = 125
         greenValue = 125
