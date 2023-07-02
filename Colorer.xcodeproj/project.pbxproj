@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D853B6722A447D4C005B7156 /* ValueFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853B6712A447D4C005B7156 /* ValueFieldView.swift */; };
+		D853B6722A447D4C005B7156 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D853B6712A447D4C005B7156 /* TextFieldView.swift */; };
 		D86C7D1A2A44756300A9EB1D /* ColorerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D192A44756300A9EB1D /* ColorerApp.swift */; };
 		D86C7D1C2A44756300A9EB1D /* ColorerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D1B2A44756300A9EB1D /* ColorerView.swift */; };
 		D86C7D1E2A44757000A9EB1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D1D2A44757000A9EB1D /* Assets.xcassets */; };
 		D86C7D212A44757100A9EB1D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */; };
 		D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */; };
+		D8A030DD2A44B44E007DFA92 /* SliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A030DC2A44B44E007DFA92 /* SliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D853B6712A447D4C005B7156 /* ValueFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueFieldView.swift; sourceTree = "<group>"; };
+		D853B6712A447D4C005B7156 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		D86C7D162A44756300A9EB1D /* Colorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Colorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D86C7D192A44756300A9EB1D /* ColorerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorerApp.swift; sourceTree = "<group>"; };
 		D86C7D1B2A44756300A9EB1D /* ColorerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorerView.swift; sourceTree = "<group>"; };
 		D86C7D1D2A44757000A9EB1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D86C7D202A44757100A9EB1D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorBoxView.swift; sourceTree = "<group>"; };
+		D8A030DC2A44B44E007DFA92 /* SliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +43,8 @@
 			children = (
 				D86C7D1B2A44756300A9EB1D /* ColorerView.swift */,
 				D86C7D272A4475CF00A9EB1D /* ColorBoxView.swift */,
-				D853B6712A447D4C005B7156 /* ValueFieldView.swift */,
+				D853B6712A447D4C005B7156 /* TextFieldView.swift */,
+				D8A030DC2A44B44E007DFA92 /* SliderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -162,7 +165,8 @@
 				D86C7D282A4475CF00A9EB1D /* ColorBoxView.swift in Sources */,
 				D86C7D1C2A44756300A9EB1D /* ColorerView.swift in Sources */,
 				D86C7D1A2A44756300A9EB1D /* ColorerApp.swift in Sources */,
-				D853B6722A447D4C005B7156 /* ValueFieldView.swift in Sources */,
+				D853B6722A447D4C005B7156 /* TextFieldView.swift in Sources */,
+				D8A030DD2A44B44E007DFA92 /* SliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

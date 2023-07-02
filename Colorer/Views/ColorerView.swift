@@ -8,12 +8,80 @@
 import SwiftUI
 
 struct ColorerView: View {
-    var body: some View {
-        VStack {
+    
+    enum Field {
+        case redValueFiled
+        case greenValueFiled
+        case blueValueFiled
+    }
+    
+    @State private var color = Color(.gray).opacity(0.5)
+    
+    @State private var redValue: Double = 125
+    @State private var greenValue: Double = 125
+    @State private var blueValue: Double = 125
 
-            Text("Hello, world!")
+    @FocusState private var focusedField: Field?
+   
+    var body: some View {
+        VStack(spacing: 30) {
+            
+            ColorBoxView(color: color)
+            .frame(height: 200)
+            
+            VStack {
+                // RED UI group
+                HStack {
+                    Text("\(lround(redValue))")
+                        .frame(width: 65)
+                    SliderView(
+                        tintColor: .red,
+                        value: $redValue)
+                    TextFieldView(value: $redValue,
+                                       action: setColor
+                    )
+//                    .focused($focusedField, equals: .redValueFiled)
+                }
+
+                Spacer()
+                Button("Reset", action: resetUI)
+                    .buttonStyle(.borderedProminent)
+                    .font(.title2)
+            }
         }
         .padding()
+//        .toolbar {
+//            ToolbarItemGroup(placement: .keyboard) {
+//                Spacer()
+//                Button("Done", action: dismissKeyBoard )
+//            }
+//        }
+        
+        
+    }
+        
+    private func validate(_ value: Double) {
+        
+    }
+    
+    private func dismissKeyBoard() {
+//        focusedRedValueTextField = false
+//        focusedGreenValueTextField = false
+//        focusedBlueValueTextField = false
+    }
+    
+    private func resetUI() {
+        redValue = 125
+//        greenSliderValue = 125
+//        blueSliderValue = 125
+        setColor()
+    }
+
+    private func setColor() {
+        color = Color(red: (redValue / 255),
+                      green: (greenValue / 255),
+                      blue: (blueValue / 255)
+        )
     }
 }
 

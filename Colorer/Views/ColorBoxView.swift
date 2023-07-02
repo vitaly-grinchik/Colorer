@@ -15,12 +15,11 @@ struct ColorBoxView: View {
             .overlay(RoundedRectangle(cornerRadius: 30)
                 .stroke(Color(.systemBlue), lineWidth: 5)
             )
-            .padding([.leading, .trailing], 30)
     }
 }
 
 struct ColorBoxView_Previews: PreviewProvider {
     static var previews: some View {
-        ColorBoxView(color: .gray.opacity(0.4))
+        ColorBoxView(color: .white)
     }
 }
