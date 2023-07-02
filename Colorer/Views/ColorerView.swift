@@ -10,9 +10,9 @@ import SwiftUI
 struct ColorerView: View {
     
     enum Field {
-        case redValueFiled
-        case greenValueFiled
-        case blueValueFiled
+        case redValueField
+        case greenValueField
+        case blueValueField
     }
     
     @State private var color = Color(.gray).opacity(0.5)
@@ -40,9 +40,32 @@ struct ColorerView: View {
                     TextFieldView(value: $redValue,
                                        action: setColor
                     )
-//                    .focused($focusedField, equals: .redValueFiled)
                 }
 
+                // GREEN UI group
+                HStack {
+                    Text("\(lround(greenValue))")
+                        .frame(width: 65)
+                    SliderView(
+                        tintColor: .green,
+                        value: $greenValue)
+                    TextFieldView(value: $greenValue,
+                                       action: setColor
+                    )
+                }
+                
+                // BLUE UI group
+                HStack {
+                    Text("\(lround(blueValue))")
+                        .frame(width: 65)
+                    SliderView(
+                        tintColor: .blue,
+                        value: $blueValue)
+                    TextFieldView(value: $blueValue,
+                                       action: setColor
+                    )
+                }
+                
                 Spacer()
                 Button("Reset", action: resetUI)
                     .buttonStyle(.borderedProminent)
@@ -72,8 +95,8 @@ struct ColorerView: View {
     
     private func resetUI() {
         redValue = 125
-//        greenSliderValue = 125
-//        blueSliderValue = 125
+        greenValue = 125
+        blueValue = 125
         setColor()
     }
 

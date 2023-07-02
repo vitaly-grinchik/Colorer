@@ -14,7 +14,7 @@ struct TextFieldView: View {
     let action: () -> Void
 
     var body: some View {
-        TextField("0", value: $value, format: .number)
+        TextField("", value: $value, format: .number)
             .padding(EdgeInsets(top: 8, leading: 16, bottom: 8, trailing: 16))
             .overlay(
                 RoundedRectangle(cornerRadius: 4)
