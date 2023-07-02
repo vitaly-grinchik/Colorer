@@ -91,10 +91,6 @@ struct ColorerView: View {
         
     }
 
-    private func setValue() {
-        focusedField = .none
-    }
-    
     private func jumpUp() {
         switch focusedField {
         case .blueValueField: focusedField = .greenValueField
